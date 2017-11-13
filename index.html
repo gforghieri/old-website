@@ -2,111 +2,114 @@
 <h2>This will be an amazing Porfolio page for the Founders & Coders course.</h2>
 
 
-header#banner.navbar.navbar-default.navbar-fixed-top
-  .container
-    a.scrollable(href='#top')
-      img(src='http://qlip.in/images/qlip.png', alt='qlip | UI/UX Design and Development', title='qlip | UI/UX Design and Development')
-    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false')
-      span.sr-only Toggle navigation
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
-    nav#navbar.collapse.navbar-collapse(role='navigation')
-      ul.nav.navbar-nav.navbar-right
-        li
-          a.scrollable(href='#top') About
-        li
-          a.scrollable(href='#portfolio') Portfolio
-        li
-          a.scrollable(href='#contact') Contact
-// end header
-a#top(name='home')
-main
-  header
-    .intro-text
-      p
-        | Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction;  devoted to functional programming and information architecture.
-      hr.star-bright
-      span.skills Web Developer - User Experience Designer - Graphic Artist
-    img(src='http://qlip.in/images/avatar.jpg', alt='A picture of Justin looking at San Francisco from across the Golden Gate Bridge.', title='A picture of Justin looking at San Francisco from across the Golden Gate Bridge.')
-  // Gallery Grid Section
-  section#portfolio
-    h2 Portfolio
-    hr.star-dark
-    ul.grid
-      li
-        img(src='http://qlip.in/images/YMCA-Realtor-Donation-3.jpg', alt='')
-      li
-        img(src='http://qlip.in/images/webcaballero.jpg', alt='')
-      li
-        img(src='http://qlip.in/images/webmarqas.jpg', alt='')
-      li
-        img(src='http://qlip.in/images/webbrandaxis.jpg', alt='')
-      li
-        img(src='http://qlip.in/images/panacea1.jpg', alt='')
-      li
-        img(src='http://qlip.in/images/webgatomalo.jpg', alt='')
-  // Contact Section
-  section#contact
-    h2 Contact Me
-    hr.star-dark
-    div
-      form#contactForm(novalidate='')
-        .form-item
-          label(for='“name”') Name
-          input#name(type='text', placeholder='Name', required='')
-        .form-item
-          label(for='“email”') Email Address
-          input#email(type='email', placeholder='Email Address', required='')
-        .form-item
-          label(for='“phone”') Phone Number
-          input#phone(type='tel', placeholder='Phone Number', required='')
-        .form-item
-          label(for='“message”') Message
-          textarea#message(rows='5', placeholder='Message', required='')
-        br
-        button(type='submit') Send
-      div
-        p
-          | Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
-        p I promise to reply A.S.A.P.
-        p Note: No spam/soliciting pour moi, merci :)
-  // Scroll to Top Button (Only supposed to be visible on small and small screen sizes)
-  .scroll-top
-    a.button.scrollable(href='#top')
-      i.fa.fa-chevron-up
-// Footer
-footer
-  #footer-above
-    div
-      h3 About this page
-      p
-        | Made with 
-        i.fa.fa-fw.fa-coffee
-        |  and 
-        i.fa.fa-fw.fa-music
-        br
-        | by 
-        a(href='http://qlip.in') Justin Sane
-        | .
-    div
-      h3 Around the Web
-      ul
-        li
-          a.button.social(href='https://www.linkedin.com/in/hallaathrad')
-            i.fa.fa-fw.fa-linkedin
-        li
-          a.button.social(href='https://github.com/hallaathrad')
-            i.fa.fa-fw.fa-github
-        li
-          a.button.social(href='https://twitter.com/hallaathrad')
-            i.fa.fa-fw.fa-twitter
-        li
-          a.button.social(href='https://www.flickr.com/photos/hallaathrad/', title='My Flickr')
-            i.fa.fa-fw.fa-flickr
-  #footer-below
-    | qlip © 
-    script.
-      document.write(new Date().getFullYear())
-    | . All Rights Reversed
-// <aside id="html5badge"><img src="http://www.w3.org/html/logo/badge/html5-badge-v-css3-graphics-semantics.png" width="38" height="170" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics"></aside>
+<!--The MIT License (MIT)
+Copyright (c) 2016 Ricardo Escobar
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Code Hamster's Site</title>
+  </head>
+  <body>
+
+    <!-- HEADER SECTION -->
+    <div class="header">
+        <h1 class="logo">Logo</h1>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+
+    <!-- STREAM SECTION -->
+    <div class="stream">
+      <iframe src="https://www.livecoding.tv/codeHamster/embed" width="900" height="506" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+    </div>
+
+    <!-- PORTFOLIO SECTION -->
+    <div class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p1.jpg">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p2.jpg">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p3.jpg">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p4.jpg">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p5.jpg">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+              <img class="img-responsive" src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p6.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <ul>
+              <li><a href="#">Livecoding</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <a id="photographyBy" href="#">Photography by Matthew Wiebe</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
