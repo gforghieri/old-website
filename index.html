@@ -3,16 +3,21 @@
   <head>
     <!LINKS>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    /* CSS STARTS */
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
     <style>
+    /* CONTENT*/
+    html {
+       -webkit-font-smoothing: antialiased;
+  }
     body {
-    background: url(https://photos.google.com/photo/AF1QipM0xQuS3uq3xkc39xQb8bfNInq2la0mShmZRxSr);
+    background: url(http://img.pixady.com/2017/11/924704_headerbackground.jpg);
     background-size: cover;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    font-size: 14px;
-    }
+    font-family: 'opensans-bold', sans-serif;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+
+}
 .portrait {
   border-radius: 100px;
     display: block;
@@ -24,12 +29,38 @@ p {
     padding: 10px;
     text-align: center;
     text-align: justify;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    color: #fff;
+    font-size: 13px;
+    color: #999595
 }
+
+.description em
+{
+  color: #fff;
+  font-style: normal;
+}
+
+
 h1 {
   text-align: center;
   margin: 10px 0px 10px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700px;
+  font-size: 50px;
+
 }
-/* SOCIAL ICONS & CONTACT DETAILS */
+hr {
+  margin: 10px 0px -22px 325px;
+  width: 50%;
+  align: centered;
+  border: none;
+   height: 1px;
+   color: #333; /* old IE */
+   background-color: #333; /* Modern Browsers */
+}
+/* SOCIAL ICONS*/
 ul {
   list-style-type: none;
   text-align: center;
@@ -41,50 +72,50 @@ li {
 }
 ol {
   display: inline;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   margin:0 0px 0 0px;
   position: relative;
   right: 50px;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px #000;
+  font-family: 'Libre Baskerville', serif;
 }
 .social-icons a {
   color: #fff;
 }
 .fa-free-code-camp {
     padding:10px 14px;
-    border-radius: 100px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    
+
 }
 .fa-free-code-camp:hover {
   background-color: green;
 }
 .fa-linkedin {
     padding:10px 14px;
-    border-radius: 10px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    
+
 }
 .fa-linkedin:hover {
   background-color: #0073a4;
 }
 .fa-github {
     padding:10px 14px;
-    border-radius: 10px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    
+
 }
 .fa-github:hover {
   background-color: #040204;
@@ -104,22 +135,13 @@ ol {
   </head>
   <body>
     <div>
-      <img class="portrait" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAIAAgDGAAAAAQAAAAAAAArNAAAAJDEzZWI2MmJjLTgyZGEtNGFlNC04OGY5LTk3NDgxNGFkZTRhNA.jpg">
+      <img class="portrait" src="https://goo.gl/6ZFge8" width="170" height="180">
     </div>
+    <h1 class="responsive-headline">I'm Giuliano Forghieri.</h1>
     <div>
-      <h1>Gian Marco Forghieri</h1>
-      <p>
-      Dear Founders & Coders,
-      <br>
-      <br>
-      First of all, I would like to thank you for providing this extraordinary opportunity to learn coding and to be part of an amazing and highly supportive community.
-       <br>
-       <br>
-      I have always been fascinated by problem solving and when I discovered coding, I realized, this profession is all about solving complex and abstract problems with results that can be utilized in various forms. Furthermore, as the future is quickly approaching, I believe having the ability to understand computers is going to be synonymous with literacy, hence my desire to learn communication with computers.
-       <br>
-       <br>
-      Thank you for taking the time to review my application!
-      </p>  
+      <p class="description">
+    I <em>fell in love with computers</em> at a very young age, I was 3 years old and it all started with video games. I realized that my attraction towards computers developed because <em>facing exciting challenges</em> and <em>solving complex problems</em> is extremely appealing to me. I believe <em>to help others</em> with leveraging the power of computers and the internet is very important and <em>I want to be the part of it!</em> That is why I would like to continue my dedicated personal and professional development with <em>Founders & Coders</em>. Thank you for this amazing, opportunity!</p>
+      <hr>
     </div>
     <div>
       <ul class="social-icons" style="padding:0 0 10px 100px">
@@ -130,8 +152,8 @@ ol {
     </div>
     <div>
       <ul class="social-icons contact">
-     <ol><i class="fa fa-phone"> +44 745 525 0825</i></ol>
-     <ol><i class="fa fa-envelope"></i> <i class="fa fa-skype"></i> forghierigianmarco@gmail.com</ol>
+     <ol><i class="fa fa-phone"> +44 745 498 0684</i></ol>
+     <ol><i class="fa fa-envelope"></i> <i class="fa fa-skype"></i> forghierigiuliano@gmail.com</ol>
     </div>
   </body>
 </html>
